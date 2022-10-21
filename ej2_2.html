@@ -1,26 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-            <form>
-                Grados Celsius:<input type="number" id="celsius"></input> Grados Farenheit:<input type="number" id="farenheit"></input>
-                <br>
-                <input type="button" value="calcular" onclick="suma()"></input> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="calcular" onclick="sumando()"></input>
-            </form>
-      
-    <script>
-        function suma(){
-            var celsius = Number(document.getElementById("celsius").value)
-            alert("Su resultado es:"+(celsius*(1.8)+32))
-        }
-        function sumando(){
-            var farenheit = Number(document.getElementById("farenheit").value)
-            alert("Su resultado es:"+((farenheit-32)*5/9))
-        }
-    </script>
-</body>
+<html>
+    <head>
+        <title>Documento</title>
+    </head>
+    <body>
+        <script>
+            var temperatura = prompt("Diga la temperatura");
+            if (temperatura<0){
+                alert("Es hielo")
+            }else if(temperatura<100){
+                alert("Es agua liquida")
+            }else{
+                alert("Es vapor")
+            }
+        </script>
+    </body>
 </html>
