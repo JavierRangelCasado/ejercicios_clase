@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    
+    <script>
+        function Categoria(){
+var edad = document.getElementById("Escriba")
+if (edad<=7){
+    document.write("<h1>Benjamin</h1>");
+}else{
+if (edad<9){
+    document.write("<h1>Alevin</h1>");
+}else{
+if (edad<=11){
+    document.write("<h1>Infantil</h1>");    
+}else{
+    document.write("<h1>Cadete</h1>");
+}
+}
+}
+        }
+    </script>
+
+    <h1>Consulta tu categoría deportiva</h1>
+    <br>
+    Edad:
+    <input type="number" id="Escriba">
+    <br>
+    <br>
+    <input type="button" value="Ver categoría" onclick="Categoria()">
+   
+</body>
+</html>
